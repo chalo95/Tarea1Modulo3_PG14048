@@ -24,7 +24,7 @@ CREATE TABLE DimProductos (
     TipoKit NVARCHAR(50) NOT NULL,
     CurrentRow BIT DEFAULT 1,
     effective_date DATETIME DEFAULT GETDATE(),
-    expiration_date DATETIME DEFAULT '9999-12-31'
+    expiration_date DATETIME DEFAULT '1900-01-01'
 );
 
 /*###################################
@@ -38,7 +38,7 @@ CREATE TABLE DimEstados (
     ZonaHoraria NVARCHAR(50) NOT NULL,
     CurrentRow BIT DEFAULT 1,
     effective_date DATETIME DEFAULT GETDATE(),
-    expiration_date DATETIME DEFAULT '9999-12-31'
+    expiration_date DATETIME DEFAULT '1900-01-01'
 );
 
 /*###################################
